@@ -35,12 +35,13 @@ True          FLookup            - Flag to indicate whether a lookup for f' will
           3   InCol_Cd           - The column in the airfoil tables that contains the drag coefficient (-)
           4   InCol_Cm           - The column in the airfoil tables that contains the pitching-moment coefficient; use zero if there is no Cm column (-)
           0   InCol_Cpmin        - The column in the airfoil tables that contains the Cpmin coefficient; use zero if there is no Cpmin column (-)
-          1   NumAFfiles         - Number of airfoil files used (-)
+          2   NumAFfiles         - Number of airfoil files used (-)
 "Airfoils/Ellipse.dat"    AFNames            - Airfoil file names (NumAFfiles lines) (quoted strings)
+"Airfoils/Empty.dat"    AFNames            - Airfoil file names (NumAFfiles lines) (quoted strings)
 ======  Rotor/Blade Properties  =====================================================================
 True          UseBlCm            - Include aerodynamic pitching moment in calculations?  (flag)
 "EllipticWing_Aerodyn_Blade.dat"    ADBlFile(1)        - Name of file containing distributed aerodynamic properties for Blade #1 (-)
-"EllipticWing_Aerodyn_Blade.dat"    ADBlFile(2)        - Name of file containing distributed aerodynamic properties for Blade #2 (-)
+"Empty_Blade.dat"    ADBlFile(2)        - Name of file containing distributed aerodynamic properties for Blade #2 (-)
 "EllipticWing_AeroDyn_Blade.dat"    ADBlFile(3)        - Name of file containing distributed aerodynamic properties for Blade #3 (-) [unused if NumBl < 3]
 ======  Tower Influence and Aerodynamics ============================================================= [used only when TwrPotent/=0, TwrShadow=True, or TwrAero=True]
          0   NumTwrNds         - Number of tower nodes used in the analysis  (-) [used only when TwrPotent/=0, TwrShadow=True, or TwrAero=True]
